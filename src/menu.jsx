@@ -3,6 +3,8 @@ import Exercici3 from "./assets/exercici3";
 import Exercici4 from "./assets/exercici4";
 import Exercici1 from "./assets/exercici1";
 import Exercici2 from "./assets/exercici2";
+import Galeria from "./assets/tasca2/Galeria.jsx";
+import Carrussel from "./assets/tasca2/carrussel.jsx";
 function Menu() {
     //ESTATS
     const [tasca, setTasca] = useState(0);
@@ -18,6 +20,15 @@ function Menu() {
 
         )
     }
+    else if (tasca === 2){
+       return(                       
+            <>
+            <Galeria />
+            <Carrussel />
+            </>
+       )
+
+    }
     //return amb el html
   return (
     <div className="exercici3">
@@ -27,6 +38,9 @@ function Menu() {
         <div>
             <button onClick={() => setTasca(1)}>Tasca 1</button>
         </div> 
+        <div style={{margin: "10px"}}>
+            <button onClick={() => setTasca(2)}>Tasca 2</button>
+        </div>
     </div>
   )
 }
