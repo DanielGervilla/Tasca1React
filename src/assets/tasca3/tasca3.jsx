@@ -9,7 +9,7 @@ function compontnets() {
     )}
 function Tasca3({imatge, titol, text, botoshare, botolearnmore}) {
     return (
-        <div style={{display:"flex", flexDirection: "column", width: "345px", gap: "10px ", backgroundColor: "#2f2c2c", borderRadius: "5px", padding: "10px"}}>
+        <div style={{display:"flex", flexDirection: "column", width: "345px", gap: "10px ", backgroundColor: "#2f2c2c", borderRadius: "5px", paddingBottom: "10px", overflow: "hidden"}}>
                 <img src={imatge} style={{width: "100%", height: "200px", objectFit: "cover"}}/>
             <div style={{display: "flex", flexDirection: "column"}}>
                 <p style={{fontSize: "20px", fontWeight:"bold", margin: "0", textAlign:"left"}}>{titol}</p>
