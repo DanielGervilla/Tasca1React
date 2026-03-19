@@ -1,21 +1,20 @@
 function Menu({canviarTasca}) {
     //ESTATS
-    const menuItems = ["Exercici 1", "Exercici 2", "Exercici 3", "Exercici 4", "Galeria", "Carrussel"];
+    const menuItems = ["Exercici 1", 
+        "Exercici 2", 
+        "Exercici 3", 
+        "Exercici 4", 
+        "Galeria", 
+        "Carrussel", 
+        "Tasca3"];
     function onClickMenuItem(item) {
         canviarTasca(item)
     }
 
   return (
-    <div style={{
-        position:"fixed",
-        top:"35px",
-        left:0,
-        width: "100vw",
-        display: "flex",
-        justifyContent: "center"
-    }}>
-        {menuItems.map((item) => (
-            <button key={item} onClick={() => onClickMenuItem(item)}>
+    <div className="medio">
+        {menuItems.map((item, index) => (
+            <button key={index} onClick={() => onClickMenuItem(item)}>
                 {item}
             </button>
         ))}

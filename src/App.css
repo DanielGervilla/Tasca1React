@@ -1,1 +1,24 @@
-
+﻿#root{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.medio {
+    position: fixed;
+    gap: 10px;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.medio button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+.medio button:hover {
+  background-color: #555;
+}
