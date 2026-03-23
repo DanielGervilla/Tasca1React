@@ -6,18 +6,22 @@
 }
 .medio {
     position: fixed;
+    padding: 35px;
     gap: 10px;
-    top: 35px;
+    top: 0px;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #242424;
 }
 .medio button {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 5px;
   color: white;
+  background-color: #555;
+
 }
 .medio button:hover {
   background-color: #555;
